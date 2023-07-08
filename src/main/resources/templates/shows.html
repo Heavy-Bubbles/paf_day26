@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Details</title>
+</head>
+<body th:object="${shows}">
+    <h1>Show Details:</h1>
+    <div th:each="show : ${shows}">
+        <h2 th:text="${show.name}"></h2>
+        <strong>Id:</strong> <p th:text="${show.id}"></p>
+        <strong>URL:</strong> <p th:text="${show.url}"></p>
+        <strong>Type:</strong> <p th:text="${show.type}"></p>
+        <strong>Genres:</strong> <p th:text="${show.genres}"></p>
+        <strong>Language:</strong> <p th:text="${show.language}"></p>
+        <strong>Status:</strong> <p th:text="${show.status}"></p>
+        <strong>Runtime:</strong> <p th:text="${show.runtime}"></p>
+        <strong>Premiered:</strong> <p th:text="${show.premiered}"></p>
+        <strong>Official Site:</strong> <p th:text="${show.officialSite}"></p>
+        <strong>Schedule:</strong> <p th:text="${show.schedule}"></p>
+        <strong>Rating:</strong> <p th:text="${show.rating}"></p>
+        <strong>Weight:</strong> <p th:text="${show.weight}"></p>
+        <strong>Network:</strong> <p th:text="${show.network}"></p>
+        <strong>Web Channel:</strong> <p th:text="${show.webChannel}"></p>
+        <strong>Externals:</strong> <p th:text="${show.externals}"></p>
+        <strong>Summary:</strong> <p th:text="${show.summary}"></p>
+        <strong>Updated:</strong> <p th:text="${show.updated}"></p>
+        <strong>Links:</strong> <p th:text="${show._links}"></p>
+        <strong>Images:</strong> <p th:text="${show.image}"></p>
+    <div>
+</body>
+</html>
